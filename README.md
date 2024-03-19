@@ -1,66 +1,10 @@
-## Foundry
+## IMP links
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses
+https://sepolia.etherscan.io/token/0xff34b3d4aee8ddcd6f9afffb6fe49bd371b8a357
+https://gho.aave.com/faucet/
 
-Foundry consists of:
+multiple: 0x8F4152Bbf9E333dD4b05879fD18714213e372EAF
+simple: 0xDEDE73a9F316D554F4D17640b716d5ECA2aBb075
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+cast send $contract2 "requestFlashLoan(address[],uint256[])" "[0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357,0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0]" "[1000000000000000000,1000000]" --rpc-url $SEPOLIA_RPC_URL --account SEPO
