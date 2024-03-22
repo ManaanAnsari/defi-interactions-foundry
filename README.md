@@ -55,5 +55,5 @@ cast send $contract2 "requestFlashLoan(address[],uint256[])" "[0xFF34B3d4Aee8ddC
 
 - [x] Flash Loans with Aave
 - [ ] Uniswap Interactions
-- [ ] mempool interaction
+- [x] mempool interaction
 - [ ] Python Interactions with DeFi
